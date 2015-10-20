@@ -9,6 +9,10 @@ class SamplParty
     SamplParty.post("/better", :body => options)
   end
 
+  def after(options={})
+    SamplParty.post("/after", :body => options)
+  end
+
   def stop
     SamplParty.get("/stop")
   end
